@@ -1,0 +1,26 @@
+# BEACON COMPUTING INITIATIVE
+# Developer Seal: CJB-DEV-2026
+# CI passes IF AND ONLY IF source integrity and both sets of Python tests pass.
+# This does NOT build or sign an Android release or validate rogue-cell accuracy.
+name: SATELLITE1 source checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  source-and-receiver:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install receiver test dependency
+        run: python -m pip install 'cryptography>=45,<48'
+      - name: Verify published SHA-256 manifest
+        run: sha256sum -c SHA256SUMS
+      - name: Check source regression suite
+        run: PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tools -p 'test_*.py' -v
+      - name: Check ORBIT11 intake tests
+        run: PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s orbit11-intake/tests -v

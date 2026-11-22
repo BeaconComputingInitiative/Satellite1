@@ -1,0 +1,41 @@
+# BEACON COMPUTING INITIATIVE
+# Developer Seal: CJB-DEV-2026
+# Exclude private evidence and tooling artifacts IF AND ONLY IF they are not intentionally reviewed for publication.
+.gradle/
+**/build/
+.idea/
+*.iml
+local.properties
+local.properties.bci-new
+*.p12
+*.jks
+*.keystore
+*.pem
+*.key
+*.crt
+*.cer
+*.env
+.env
+.env.*
+!*.env.example
+__pycache__/
+*.pyc
+.venv/
+venv/
+release-evidence/
+*.apk
+*.aab
+*.apks
+*.jsonl
+*.ndjson
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.log
+*.log.*
+.DS_Store
+*.swp
+*.bak
+*~

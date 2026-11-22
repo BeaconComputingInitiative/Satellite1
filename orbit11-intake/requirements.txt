@@ -1,0 +1,4 @@
+# BEACON COMPUTING INITIATIVE
+# Developer Seal: CJB-DEV-2026
+# Install IF AND ONLY IF package repository and hashes are independently trusted.
+cryptography>=45,<48

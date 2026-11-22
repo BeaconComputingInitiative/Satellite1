@@ -9,9 +9,6 @@
 
 > **Research / pre-release.** The v0.1.3 predecessor was installed and exercised on a Samsung device. The v0.1.4 classifier source has local rule, scaffold, and intake unit tests, plus a correction for a Kotlin compile-scope failure. **A successful full v0.1.5 Android build, signed release, in-place Samsung upgrade, end-to-end ORBIT11 API delivery, independent classification validation, and production qualification have not been established in this repository.** This software **cannot verify that a cell tower is fake** or identify who operates one.
 
-
-> **Publication note:** The detailed documentation is live. The full v0.1.5 source synchronization remains pending; do not treat this README as a verified Android release or assume the source files have all been uploaded yet.
-
 ## At a glance
 
 | Area | Implemented behavior | Boundary / qualification |

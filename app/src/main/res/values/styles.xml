@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BEACON COMPUTING INITIATIVE | Developer Seal: CJB-DEV-2026 -->
+<resources>
+    <style name="Theme.Satellite1.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#05080D</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.Satellite1.Main</item>
+    </style>
+    <style name="Theme.Satellite1.Main" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#05080D</item>
+        <item name="android:navigationBarColor">#05080D</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>
